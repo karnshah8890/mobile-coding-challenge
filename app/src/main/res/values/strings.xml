@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PhotoDemo</string>
+    <string name="alert_no_internet">There is no internet connection.</string>
+    <string name="image_source">Images from Unsplash</string>
+</resources>

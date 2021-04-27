@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/ivPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:background="@color/teal_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/size_70dp"
+        android:lines="2"
+        android:paddingStart="@dimen/size_16dp"
+        android:paddingEnd="@dimen/size_16dp"
+        android:text="@string/image_source"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivThumb"
+        android:layout_width="@dimen/size_24dp"
+        android:layout_height="@dimen/size_24dp"
+        android:layout_marginStart="@dimen/size_16dp"
+        android:contentDescription="@string/image_source"
+        android:src="@drawable/ic_baseline_thumb_up_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDesc" />
+
+    <TextView
+        android:id="@+id/tvLikes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_16dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_24sp"
+        app:layout_constraintBottom_toBottomOf="@id/ivThumb"
+        app:layout_constraintStart_toEndOf="@+id/ivThumb"
+        app:layout_constraintTop_toTopOf="@id/ivThumb"
+        tools:text="10" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
